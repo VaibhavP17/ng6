@@ -1,0 +1,27 @@
+.header {
+  font: 21px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color: #af2f2f9c;
+}
+
+.new-todo {
+  margin: auto;
+  display: flex;
+  width: 50%;
+  height: 50px;
+}
+
+li {
+  list-style-type: none;
+
+  .todo-item {
+    padding-right: 5px;
+  }
+
+  &.todo-done {
+    text-decoration: line-through;
+  }
+}
+

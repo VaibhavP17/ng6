@@ -1,0 +1,13 @@
+<header class="header">todos</header>
+
+
+<input class="new-todo" placeholder="Please enter things to do" type="text"
+       [(ngModel)]="newTodo.text" (keydown.enter)="addTodo()">
+
+
+<section class="main">
+  <li *ngFor="let todo of todos; let i = index;" [class]="todo.done ? 'todo-done': ''">
+    <span (click)="markDone(i)" class="todo-item">{{todo.text}}</span>
+    <span (click)="deleteItem(i)"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+  </li>
+</section>
