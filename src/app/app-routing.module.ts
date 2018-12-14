@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {UsersComponent} from './users/users.component';
-import {DetailsComponent} from './details/details.component';
-import {PostsComponent} from './posts/posts.component';
-import {WidgetsComponent} from './widgets/widgets.component';
-import {TodoComponent} from './widgets/todo/todo.component';
+import { UsersComponent } from './users/users.component';
+import { DetailsComponent } from './details/details.component';
+import { PostsComponent } from './posts/posts.component';
+import { WidgetsComponent } from './widgets/widgets.component';
+import { TodoComponent } from './widgets/todo/todo.component';
 
 const routes: Routes = [
   {
@@ -22,7 +22,7 @@ const routes: Routes = [
   {
     path: 'widgets',
     component: WidgetsComponent,
-    children : [
+    children: [
       {
         path: 'todo',
         component: TodoComponent
@@ -35,4 +35,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

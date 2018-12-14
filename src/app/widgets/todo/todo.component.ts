@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-todo',
@@ -29,7 +29,7 @@ export class TodoComponent implements OnInit {
   }
 
   resetTodo() {
-    this.newTodo = {text: '', done: false};
+    this.newTodo = { text: '', done: false };
   }
 
   deleteItem(index) {
